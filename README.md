@@ -15,22 +15,22 @@ When a website is considered SUSPICIOUS that means it can be either phishy or le
 
 ## Variables Table
 
-| Variable Name      | Role    | Type    | Missing Values |
-|--------------------|---------|---------|----------------|
-| SFH                | Feature | Integer | no             |
-| popUpWindow        | Feature | Integer | no             |
-| SSLfinal_State     | Feature | Integer | no             |
-| Request_URL        | Feature | Integer | no             |
-| URL_of_Anchor      | Feature | Integer | no             |
-| web_traffic        | Feature | Integer | no             |
-| URL_Length         | Feature | Integer | no             |
-| age_of_domain      | Feature | Integer | no             |
-| having_IP_Address  | Feature | Integer | no             |
-| Result             | Target  | Integer | no             |
+| Variable Name      | Role    | Type    | Missing Values | Description |
+|--------------------|---------|---------|----------------|-------------|
+| SFH                | Feature | Integer | no             | Whether the form handler is on the same domain
+| popUpWindow        | Feature | Integer | no             | Presence of pop-up windows that ask for personal information
+| SSLfinal_State     | Feature | Integer | no             | SSL certificate status and validity
+| Request_URL        | Feature | Integer | no             | Percentage of external objects in the page
+| URL_of_Anchor      | Feature | Integer | no             | Percentage of anchor URLs pointing to different domains
+| web_traffic        | Feature | Integer | no             | Website traffic rank from Alexa
+| URL_Length         | Feature | Integer | no             | Length of the URL
+| age_of_domain      | Feature | Integer | no             | Age of the domain registration
+| having_IP_Address  | Feature | Integer | no             | Whether URL uses IP address instead of domain name
+| Result             | Target  | Integer | no             | Website classification (-1 = Phishing, 0 = Suspicious, 1 = Legitimate)
 
-##
-
-... must add definitions...
+- 1 = **Phishy**
+- 0 = **Suspicious**
+- -1 = **Legitimate**
 
 ## Sources of Data
 
