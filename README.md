@@ -36,9 +36,8 @@ This repository is dedicated to the exploration and analysis of the Website Phis
 | Result             | Target  | Integer | Website Phishy-ness classification
 
 **Possible Values**
-- 1 = Phishy
-- 0 = Suspicious
-- -1 = Legitimate
+- Features: 1 = Phishy, 0 = Suspicious, -1 = Legitimate (mostly)
+- Target: -1 = Phishy, 0 = Suspicious, 1 = Legitimate
 
 No missing values present.
 
