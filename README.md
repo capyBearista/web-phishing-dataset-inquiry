@@ -6,7 +6,7 @@ This repository is dedicated to the exploration and analysis of the Website Phis
 - Performing exploratory data analysis (EDA) to uncover patterns and insights.
 - Preparing the data for potential machine learning applications in phishing detection.
 
-## Dataset
+## Dataset Details
 
 [Website Phishing](https://archive.ics.uci.edu/dataset/379/website+phishing) from UC Irvine Machine Learning Repository
 - Created by [Phishing detection based Associative Classification data mining](https://www.semanticscholar.org/paper/Phishing-detection-based-Associative-Classification-Abdelhamid-Ayesh/867e2293e9780b729705b4ba48d6b11e3778e999) (Abdelhamid et al., 2014)
@@ -37,13 +37,17 @@ This repository is dedicated to the exploration and analysis of the Website Phis
 
 **Possible Values**
 - Features: 1 = Phishy, 0 = Suspicious, -1 = Legitimate (mostly)
-- Target: -1 = Phishy, 0 = Suspicious, 1 = Legitimate
+- Target: 1 = Legitimate, 0 = Suspicious, -1 = Phishy
 
 No missing values present.
 
-### Sources of Data
+## Sources of Data
 
+### Dataset
 - Phishing Websites: The researchers sourced 752 phishing sites from PhishTank and Millersmiles. These platforms are community-driven archives where users report and share data on known phishing attacks.   
 - Legitimate Websites: They collected 601 legitimate sites from the Yahoo Directory.  
 
 **Collection Methodology**: To gather this data efficiently, the authors developed a specific web script written in PHP. This script was embedded directly into a web browser, allowing them to automatically browse, scrape, and extract the necessary feature data from the 1,353 total websites included in the study.
+
+### Notebooks
+Notebooks 1–3 are based off assignment steps from Quincy College course _CSI 470 - Big Data Analytics_.
